@@ -22,7 +22,7 @@ With this buide you will be able to:
 - [2. Install SteamCMD](#2-install-steamcmd)
 - [3. Install Valheim Dedicated Server](#3-install-valheim-dedicated-server)
 - [4. Fix Steam Runtime](#4-fix-steam-runtime)
-- [5. World Directory Structure](#5-world-directory-structure)
+- [5. Multi-World Directory Structure](#5-multi-world-directory-structure)
 - [6. Create Worlds](#6-create-worlds-recommended-method)
 - [7. Native Startup Scripts](#7-native-startup-scripts)
 - [8. Firewall Setup](#8-open-firewall-ports)
