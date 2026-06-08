@@ -71,7 +71,7 @@ app_update 896660 validate
 quit
 ```
 
-# 4. Install Valheim Dedicated Server
+# 4. Fix Steam Runtime
 
 ```bash
 mkdir -p ~/.steam/sdk64
