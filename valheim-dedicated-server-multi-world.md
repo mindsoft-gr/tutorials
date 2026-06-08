@@ -45,3 +45,5 @@ Open a terminal and install the basics:
 
 ```bash
 sudo apt update && sudo apt install curl wget tar lib32gcc-s1 -y
+
+# 2. Install SteamCMD
