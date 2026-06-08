@@ -28,7 +28,7 @@ A complete guide to running **multiple Valheim worlds on one Linux server**, usi
 
 ---
 
-# 0. Overview
+# . Overview
 
 With this buide you will be able to:
 
@@ -63,7 +63,7 @@ tar -xvzf steamcmd_linux.tar.gz
 ./steamcmd.sh
 ```
 
-.Inside SteamCMD:
+Inside SteamCMD:
 ```bash
 force_install_dir /home/$USER/valheim-server
 login anonymous
@@ -71,7 +71,7 @@ app_update 896660 validate
 quit
 ```
 
-# 4. Fix Steam Runtime
+# 4. Install Valheim Dedicated Server
 ```bash
 mkdir -p ~/.steam/sdk64
 cp ~/steamcmd/linux64/steamclient.so ~/.steam/sdk64/
