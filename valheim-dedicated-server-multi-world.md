@@ -71,7 +71,7 @@ app_update 896660 validate
 quit
 ```
 
-4. Fix Steam Runtime
+# 4. Fix Steam Runtime
 ```bash
 mkdir -p ~/.steam/sdk64
 cp ~/steamcmd/linux64/steamclient.so ~/.steam/sdk64/
