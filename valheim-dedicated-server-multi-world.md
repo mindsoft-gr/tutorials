@@ -95,7 +95,7 @@ Create worlds in-game:
 ```bash
 World  Seed
 World1	Valheim
-World2	vikings123
+World2	tyeDWcN7cp
 World3	hardcore999
 ```
 
