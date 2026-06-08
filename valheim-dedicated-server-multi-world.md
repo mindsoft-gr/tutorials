@@ -170,56 +170,120 @@ chmod +x ~/valheim-server/start_world2.sh
 ```
 
 World 3
+```bash
+nano ~/valheim-server/start_world3.sh
+```
+
+Paste this:
+```bash
 #!/bin/bash
 
 ./valheim_server.x86_64 \
 -name "World3" \
 -port 2462 \
 -world "World3" \
--password "StrongPassword3" \
+-password "123456" \
 -public 1 \
 -savedir "$HOME/valheim-configs/world3" \
 -crossplay
-8. Open Firewall Ports
+```
+Make it executable
+```bash
+chmod +x ~/valheim-server/start_world3.sh
+```
+
+# 8. Open Firewall Ports
+
+```bash
 sudo ufw allow 2456:2458/udp
 sudo ufw allow 2459:2461/udp
 sudo ufw allow 2462:2464/udp
-9. Run Servers (Native)
+```
+
+# 9. Run Servers (Native)
+
+```bash
 ./start_world1.sh
 ./start_world2.sh
 ./start_world3.sh
+```
 
 Connect:
 
-IP:2456
-IP:2459
-IP:2462
-10. systemd Services (Auto Start)
+```bash
+server-IP:2456
+server-IP:2459
+server-IP:2462
+```
+
+# 10. systemd Services (Auto Start)
+
 World 1 Service
+```bash
 sudo nano /etc/systemd/system/valheim-world1.service
+```
+
+```bash
 [Unit]
 Description=Valheim World1
 After=network.target
 
 [Service]
 Type=simple
-User=vortex
-WorkingDirectory=/home/vortex/valheim-server
-ExecStart=/home/vortex/valheim-server/start_world1.sh
+User=user
+WorkingDirectory=/home/user/valheim-server
+ExecStart=/home/user/valheim-server/start_world1.sh
 Restart=always
 RestartSec=10
 
 [Install]
 WantedBy=multi-user.target
+```
 
 Enable:
-
+```bash
 sudo systemctl daemon-reload
 sudo systemctl enable --now valheim-world1
+```
 
 Logs:
-
+```bash
 journalctl -u valheim-world1 -f
+```
+
+World 2 Service
+```bash
+sudo nano /etc/systemd/system/valheim-world2.service
+```
+
+```bash
+[Unit]
+Description=Valheim World2
+After=network.target
+
+[Service]
+Type=simple
+User=user
+WorkingDirectory=/home/user/valheim-server
+ExecStart=/home/user/valheim-server/start_world2.sh
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Enable:
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable --now valheim-world1
+```
+
+Logs:
+```bash
+journalctl -u valheim-world1 -f
+```
+
 11. Add Admins
 nano ~/.config/unity3d/IronGate/Valheim/adminlist.txt
 
