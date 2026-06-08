@@ -197,7 +197,7 @@ Make it executable
 chmod +x ~/valheim-server/start_world3.sh
 ```
 
-Launch parameters for World Modifiers
+# Launch parameters for World Modifiers
 
 Edit your server startup script for example ```start_world1.sh``` and add world modifier flags.
 
@@ -237,7 +237,24 @@ Example:
 This Changes difficulty for World1
 
 
-Option 2: Fully custom world modifiers
+Option 2: Fine-tuned modifiers (advanced)
+
+You can override specific systems using ```-modifier:```:
+
+```bash
+-modifier combat hard
+-modifier raids less
+-modifier resources more
+-modifier portals casual
+-modifier deathpenalty easy
+```
+
+Common values:
+-Combat: ```veryeasy / easy / hard / veryhard```
+-Raids: ```none / less / more / muchmore```
+-Resources: ```less / more / muchmore```
+-Portals: ```casual / hard / veryhard```
+-Death penalty:```casual / easy / hard / hardcore```
 
 If you want direct control instead of presets:
 
