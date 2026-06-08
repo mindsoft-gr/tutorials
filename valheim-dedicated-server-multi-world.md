@@ -14,7 +14,7 @@ A complete guide to running **multiple Valheim worlds on one Linux server**, usi
 - [2. Install SteamCMD](#2-install-steamcmd)
 - [3. Install Valheim Dedicated Server](#3-install-valheim-dedicated-server)
 - [4. Fix Steam Runtime](#4-fix-steam-runtime-library)
-- [5. Create Multi-World Structure](#5-multi-world-directory-structure)
+- [5. Multi-World Structure](#5-multi-world-directory-structure)
 - [6. Create Worlds](#6-create-worlds-recommended-method)
 - [7. Native Startup Scripts](#7-native-startup-scripts)
 - [8. Firewall Setup](#8-open-firewall-ports)
