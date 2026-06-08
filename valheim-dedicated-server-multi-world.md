@@ -231,7 +231,7 @@ Example:
 -password "123456" \
 -public 1 \
 -savedir "$HOME/valheim-configs/world1" \
--preset normal \
+-preset hammer \
 -crossplay
 ```
 This Changes difficulty for World1
@@ -256,7 +256,6 @@ Common values:
 -Portals: ```casual / hard / veryhard```
 -Death penalty:```casual / easy / hard / hardcore```
 
-If you want direct control instead of presets:
 
 ```bash
 ./valheim_server.x86_64 \
@@ -508,6 +507,34 @@ services:
 
     volumes:
       - ./world6:/config
+```
+World Modifiers for Docker
+
+If you’re using a popular image like ```lloesche/valheim-server```, you configure everything via ```environment:```.
+
+Example ```docker-compose.yml```
+
+```bash
+services:
+
+  world4:
+    image: ghcr.io/lloesche/valheim-server
+    container_name: valheim-world4
+    restart: unless-stopped
+
+    ports:
+      - "2500:2456/udp"
+      - "2501:2457/udp"
+      - "2502:2458/udp"
+
+    environment:
+      SERVER_NAME: World4
+      WORLD_NAME: World4
+      SERVER_PASS: 123456
+      VALHEIM_PRESET: normal
+
+    volumes:
+      - ./world4:/config
 ```
 
 # 14. Start Docker Servers
