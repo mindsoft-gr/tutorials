@@ -568,6 +568,27 @@ environment:
 
 Not all Docker images support this. If ignored, your image likely only supports ```VALHEIM_PRESET```.
 
+Important Docker folder structure (THIS MATTERS)
+
+Because you set:
+```bash
+WORLD_NAME=World4
+```
+Your mounted volume:
+```bash
+$HOME/valheim-configs/world1:/config
+```
+Inside container, world files must be:
+```bash
+/config/worlds_local/World4.db
+/config/worlds_local/World4.fwl
+```
+
+
+
+
+
+
 
 
 # 14. Start Docker Servers
