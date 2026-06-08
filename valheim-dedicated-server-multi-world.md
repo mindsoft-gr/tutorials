@@ -158,11 +158,12 @@ Paste this:
 #!/bin/bash
 
 ./valheim_server.x86_64 \
--name "World2" \
--port 2459 \
--world "World2" \
+-name "World1" \
+-port 2456 \
+-world "World1" \
 -password "123456" \
 -public 1 \
+-savedir "$HOME/valheim-configs/world1" \
 -savedir "$HOME/valheim-configs/world2" \
 -crossplay
 ```
@@ -194,6 +195,59 @@ Paste this:
 Make it executable
 ```bash
 chmod +x ~/valheim-server/start_world3.sh
+```
+
+Launch parameters for World Modifiers
+
+Edit your server startup script for example ```start_world1.sh``` and add world modifier flags.
+
+Option 1: Change difficulty
+```bash
+./valheim_server.x86_64 \
+-name "World1" \
+-port 2456 \
+-world "World1" \
+-password "123456" \
+-public 1 \
+-savedir "$HOME/valheim-configs/world1" \
+-preset normal \
+-crossplay
+```
+This Changes difficulty for World1
+Just replace this line:
+
+```bash
+-preset normal
+```
+
+Examples:
+```bash
+-preset casual
+-preset easy
+-preset normal
+-preset hard
+-preset hardcore
+-preset immersive
+```
+
+Option 2: Fully custom world modifiers
+
+If you want direct control instead of presets:
+
+```bash
+./valheim_server.x86_64 \
+-name "World1" \
+-port 2456 \
+-world "World1" \
+-password "123456" \
+-public 1 \
+-savedir "$HOME/valheim-configs/world1" \
+-modifier combat hard \
+-modifier raids less \
+-modifier resources more \
+-modifier portals casual \
+-modifier deathpenalty easy \
+-crossplay
 ```
 
 # 8. Open Firewall Ports
