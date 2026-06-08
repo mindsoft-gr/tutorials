@@ -62,3 +62,11 @@ tar -xvzf steamcmd_linux.tar.gz
 ```bash
 ./steamcmd.sh
 ```
+
+Inside SteamCMD:
+```bash
+force_install_dir /home/$USER/valheim-server
+login anonymous
+app_update 896660 validate
+quit
+```
