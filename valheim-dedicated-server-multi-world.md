@@ -201,6 +201,19 @@ Launch parameters for World Modifiers
 
 Edit your server startup script for example ```start_world1.sh``` and add world modifier flags.
 
+Difficulty presets:
+```bash
+-preset normal
+-preset casual
+-preset easy
+-preset hard
+-preset hardcore
+-preset immersive
+-preset hammer
+```
+
+```-preset``` overrides most other settings, so use it first when resetting.
+
 Option 1: Change difficulty
 ```bash
 ./valheim_server.x86_64 \
@@ -218,16 +231,6 @@ Just replace this line:
 
 ```bash
 -preset normal
-```
-
-Examples:
-```bash
--preset casual
--preset easy
--preset normal
--preset hard
--preset hardcore
--preset immersive
 ```
 
 Option 2: Fully custom world modifiers
