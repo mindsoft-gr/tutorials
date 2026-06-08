@@ -5,6 +5,15 @@ A complete guide to running **multiple Valheim worlds on one Linux server**, usi
 - Native Linux (systemd-based setup)
 - Docker (recommended for scalability and isolation)
 
+# Overview
+
+With this buide you will be able to:
+
+- Host multiple independent Valheim worlds
+- Assign each world its own ports
+- Run worlds via systemd or Docker or both
+- Scale easily from 1 → 10+ worlds
+
 ---
 
 # Table of Contents
@@ -27,16 +36,6 @@ A complete guide to running **multiple Valheim worlds on one Linux server**, usi
 
 ---
 
-# Overview
-
-With this buide you will be able to:
-
-- Host multiple independent Valheim worlds
-- Assign each world its own ports
-- Run worlds via systemd or Docker or both
-- Scale easily from 1 → 10+ worlds
-
----
 ## 1. Install Dependencies
 
 Open a terminal and install the basics:
