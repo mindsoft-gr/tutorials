@@ -72,23 +72,27 @@ quit
 ```
 
 # 4. Install Valheim Dedicated Server
+
 ```bash
 mkdir -p ~/.steam/sdk64
 cp ~/steamcmd/linux64/steamclient.so ~/.steam/sdk64/
 ```
 
 # 5. Multi-World Structure
+
 ```bash
 mkdir -p ~/valheim-configs/world1
 mkdir -p ~/valheim-configs/world2
 mkdir -p ~/valheim-configs/world3
 ```
+
 ```bash
 valheim-configs/
 ├── world1/
 ├── world2/
 └── world3/
 ```
+
 # 6. Create Worlds
 
 # 7. Native Startup Scripts
