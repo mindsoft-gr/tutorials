@@ -89,6 +89,7 @@ valheim-configs/
 ├── world2/
 └── world3/
 ```
+# 6. 
 
 #7. Create Worlds (Recommended Method)
 
