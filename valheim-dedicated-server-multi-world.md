@@ -72,7 +72,7 @@ mkdir -p ~/.steam/sdk64
 cp ~/steamcmd/linux64/steamclient.so ~/.steam/sdk64/
 ```
 
-# 5. World Directory Structure
+# 5. Multi-World Directory Structure
 
 ```bash
 mkdir -p ~/valheim-configs/world1
