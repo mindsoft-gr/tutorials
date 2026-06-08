@@ -41,6 +41,6 @@ With this buide you will be able to:
 
 # 1. Install Dependencies
 
-```bash
-sudo apt update
-sudo apt install -y curl wget tar lib32gcc-s1
+Open a terminal and install the basics:
+
+sudo apt update && sudo apt install curl wget tar lib32gcc-s1 -y
