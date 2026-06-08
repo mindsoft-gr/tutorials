@@ -147,16 +147,28 @@ chmod +x ~/valheim-server/start_world1.sh
 ```
 
 World 2
+```bash
+nano ~/valheim-server/start_world2.sh
+```
+
+Paste this:
+```bash
 #!/bin/bash
 
 ./valheim_server.x86_64 \
 -name "World2" \
 -port 2459 \
 -world "World2" \
--password "StrongPassword2" \
+-password "123456" \
 -public 1 \
 -savedir "$HOME/valheim-configs/world2" \
 -crossplay
+```
+Make it executable
+```bash
+chmod +x ~/valheim-server/start_world2.sh
+```
+
 World 3
 #!/bin/bash
 
