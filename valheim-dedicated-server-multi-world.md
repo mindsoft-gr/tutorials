@@ -38,7 +38,7 @@ With this buide you will be able to:
 - Scale easily from 1 → 10+ worlds
 
 ---
-
+## Install Dependencies
 # 1. Install Dependencies
 
 Open a terminal and install the basics:
@@ -46,7 +46,7 @@ Open a terminal and install the basics:
 ```bash
 sudo apt update && sudo apt install curl wget tar lib32gcc-s1 -y
 ```
-
+## Install SteamCMD
 # 2. Install SteamCMD
 
 ```bash
@@ -56,7 +56,7 @@ cd ~/steamcmd
 wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz
 tar -xvzf steamcmd_linux.tar.gz
 ```
-
+## Install Valheim Dedicated Server
 # 3. Install Valheim Dedicated Server
 
 ```bash
@@ -70,7 +70,7 @@ login anonymous
 app_update 896660 validate
 quit
 ```
-
+## Fix Steam Runtime
 # 4. Fix Steam Runtime
 
 ```bash
@@ -78,6 +78,7 @@ mkdir -p ~/.steam/sdk64
 cp ~/steamcmd/linux64/steamclient.so ~/.steam/sdk64/
 ```
 
+## Multi-World Structure
 # 5. Multi-World Structure
 
 ```bash
