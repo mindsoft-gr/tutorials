@@ -553,6 +553,22 @@ immersive
 hammer
 ```
 
+Custom modifiers (if your image supports it)
+
+Some images allow fine-tuning:
+
+```bash
+environment:
+  - VALHEIM_MODIFIER_COMBAT=hard
+  - VALHEIM_MODIFIER_RAIDS=less
+  - VALHEIM_MODIFIER_RESOURCES=more
+  - VALHEIM_MODIFIER_PORTALS=casual
+  - VALHEIM_MODIFIER_DEATHPENALTY=easy
+```
+
+Not all Docker images support this. If ignored, your image likely only supports ```VALHEIM_PRESET```.
+
+
 
 # 14. Start Docker Servers
 
