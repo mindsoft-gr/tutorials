@@ -354,69 +354,84 @@ sudo usermod -aG docker $USER
 
 Log out & back in.
 
-# Directory
+
+
+# 13. docker-compose.yml
+
+Directories
 ```bash
 mkdir -p ~/valheim-docker/world1
 mkdir -p ~/valheim-docker/world2
 mkdir -p ~/valheim-docker/world3
 ```
 
-# 13. docker-compose.yml
+Create ```yml``` file
+```bash
+cd ~/valheim-docker
+nano docker-compose.yml
+```
+
+Paste this:
+```bash
 services:
 
-  world1:
+  world4:
     image: ghcr.io/lloesche/valheim-server
-    container_name: valheim-world1
+    container_name: valheim-world4
     restart: unless-stopped
 
     ports:
-      - "2456:2456/udp"
-      - "2457:2457/udp"
-      - "2458:2458/udp"
+      - "2500:2456/udp"
+      - "2501:2457/udp"
+      - "2502:2458/udp"
 
     environment:
-      SERVER_NAME: World1
-      WORLD_NAME: World1
-      SERVER_PASS: StrongPassword1
+      SERVER_NAME: World4
+      WORLD_NAME: World4
+      SERVER_PASS: StrongPassword4
 
     volumes:
-      - ./world1:/config
+      - ./world4:/config
 
-  world2:
+
+  world5:
     image: ghcr.io/lloesche/valheim-server
-    container_name: valheim-world2
+    container_name: valheim-world5
     restart: unless-stopped
 
     ports:
-      - "2459:2456/udp"
-      - "2460:2457/udp"
-      - "2461:2458/udp"
+      - "2503:2456/udp"
+      - "2504:2457/udp"
+      - "2505:2458/udp"
 
     environment:
-      SERVER_NAME: World2
-      WORLD_NAME: World2
-      SERVER_PASS: StrongPassword2
+      SERVER_NAME: World5
+      WORLD_NAME: World5
+      SERVER_PASS: StrongPassword5
 
     volumes:
-      - ./world2:/config
+      - ./world5:/config
 
-  world3:
+
+  world6:
     image: ghcr.io/lloesche/valheim-server
-    container_name: valheim-world3
+    container_name: valheim-world6
     restart: unless-stopped
 
     ports:
-      - "2462:2456/udp"
-      - "2463:2457/udp"
-      - "2464:2458/udp"
+      - "2506:2456/udp"
+      - "2507:2457/udp"
+      - "2508:2458/udp"
 
     environment:
-      SERVER_NAME: World3
-      WORLD_NAME: World3
-      SERVER_PASS: StrongPassword3
+      SERVER_NAME: World6
+      WORLD_NAME: World6
+      SERVER_PASS: StrongPassword6
 
     volumes:
-      - ./world3:/config
+      - ./world6:/config
+```
+
 14. Start Docker Servers
 docker compose up -d
 
