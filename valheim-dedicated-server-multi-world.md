@@ -536,6 +536,23 @@ services:
     volumes:
       - ./world4:/config
 ```
+To change world modifiers (recommended way) Just edit:
+
+```bash
+- VALHEIM_PRESET=normal
+```
+
+Options:
+```bash
+casual
+normal
+easy
+hard
+hardcore
+immersive
+hammer
+```
+
 
 # 14. Start Docker Servers
 
