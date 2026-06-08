@@ -96,7 +96,7 @@ Create worlds in-game:
 World  Seed
 World1	Valheim
 World2	tyeDWcN7cp
-World3	hardcore999
+World3	ym6RwFNELS
 ```
 
 Copy:
