@@ -9,7 +9,7 @@ A complete guide to running **multiple Valheim worlds on one Linux server**, usi
 
 # Table of Contents
 
-- [Overview](#-valheim-dedicated-server-multi-world-native--docker)
+- [0. Overview](#-valheim-dedicated-server-multi-world-native--docker)
 - [1. Install Dependencies](#1-install-dependencies)
 - [2. Install SteamCMD](#2-install-steamcmd)
 - [3. Install Valheim Dedicated Server](#3-install-valheim-dedicated-server)
@@ -28,7 +28,7 @@ A complete guide to running **multiple Valheim worlds on one Linux server**, usi
 
 ---
 
-# Overview
+# 0. Overview
 
 With this buide you will be able to:
 
