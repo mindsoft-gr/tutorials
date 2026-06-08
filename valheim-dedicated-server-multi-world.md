@@ -120,18 +120,178 @@ Then move into:
 
 # 7. Native Startup Scripts
 
-# 8. Firewall Setup
+World 1
+```bash
+nano ~/valheim-server/start_world1.sh
+```
 
-# 9. Run Servers (Native)
+Paste this:
+```bash
+#!/bin/bash
 
-# 10. systemd Services
+export templatedir=$PWD
 
-# 11. Admin Setup
+./valheim_server.x86_64 \
+-name "World1" \
+-port 2456 \
+-world "World1" \
+-password "123456" \
+-public 1 \
+-savedir "$HOME/valheim-configs/world1" \
+-crossplay
+```
 
-# 12. Docker Setup
+Make it executable
+```bash
+chmod +x ~/valheim-server/start_world1.sh
+```
 
-# 13. docker-compose,ynl
+World 2
+#!/bin/bash
 
-# 14. Start Docker
+./valheim_server.x86_64 \
+-name "World2" \
+-port 2459 \
+-world "World2" \
+-password "StrongPassword2" \
+-public 1 \
+-savedir "$HOME/valheim-configs/world2" \
+-crossplay
+World 3
+#!/bin/bash
 
-#15. Production Notes
+./valheim_server.x86_64 \
+-name "World3" \
+-port 2462 \
+-world "World3" \
+-password "StrongPassword3" \
+-public 1 \
+-savedir "$HOME/valheim-configs/world3" \
+-crossplay
+8. Open Firewall Ports
+sudo ufw allow 2456:2458/udp
+sudo ufw allow 2459:2461/udp
+sudo ufw allow 2462:2464/udp
+9. Run Servers (Native)
+./start_world1.sh
+./start_world2.sh
+./start_world3.sh
+
+Connect:
+
+IP:2456
+IP:2459
+IP:2462
+10. systemd Services (Auto Start)
+World 1 Service
+sudo nano /etc/systemd/system/valheim-world1.service
+[Unit]
+Description=Valheim World1
+After=network.target
+
+[Service]
+Type=simple
+User=vortex
+WorkingDirectory=/home/vortex/valheim-server
+ExecStart=/home/vortex/valheim-server/start_world1.sh
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+
+Enable:
+
+sudo systemctl daemon-reload
+sudo systemctl enable --now valheim-world1
+
+Logs:
+
+journalctl -u valheim-world1 -f
+11. Add Admins
+nano ~/.config/unity3d/IronGate/Valheim/adminlist.txt
+
+Example:
+
+76561198012345678
+76561198087654321
+
+Restart server after changes.
+
+12. Docker Setup (Recommended)
+Install Docker
+curl -fsSL https://get.docker.com | sh
+sudo usermod -aG docker $USER
+
+Log out & back in.
+
+Directory
+mkdir -p ~/valheim-docker/world1
+mkdir -p ~/valheim-docker/world2
+mkdir -p ~/valheim-docker/world3
+13. docker-compose.yml
+services:
+
+  world1:
+    image: ghcr.io/lloesche/valheim-server
+    container_name: valheim-world1
+    restart: unless-stopped
+
+    ports:
+      - "2456:2456/udp"
+      - "2457:2457/udp"
+      - "2458:2458/udp"
+
+    environment:
+      SERVER_NAME: World1
+      WORLD_NAME: World1
+      SERVER_PASS: StrongPassword1
+
+    volumes:
+      - ./world1:/config
+
+  world2:
+    image: ghcr.io/lloesche/valheim-server
+    container_name: valheim-world2
+    restart: unless-stopped
+
+    ports:
+      - "2459:2456/udp"
+      - "2460:2457/udp"
+      - "2461:2458/udp"
+
+    environment:
+      SERVER_NAME: World2
+      WORLD_NAME: World2
+      SERVER_PASS: StrongPassword2
+
+    volumes:
+      - ./world2:/config
+
+  world3:
+    image: ghcr.io/lloesche/valheim-server
+    container_name: valheim-world3
+    restart: unless-stopped
+
+    ports:
+      - "2462:2456/udp"
+      - "2463:2457/udp"
+      - "2464:2458/udp"
+
+    environment:
+      SERVER_NAME: World3
+      WORLD_NAME: World3
+      SERVER_PASS: StrongPassword3
+
+    volumes:
+      - ./world3:/config
+14. Start Docker Servers
+docker compose up -d
+
+Logs:
+
+docker logs -f valheim-world1
+
+Stop:
+
+docker compose down
