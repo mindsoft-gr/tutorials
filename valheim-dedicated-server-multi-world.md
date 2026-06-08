@@ -361,7 +361,7 @@ mkdir -p ~/valheim-docker/world2
 mkdir -p ~/valheim-docker/world3
 ```
 
-13. docker-compose.yml
+# 13. docker-compose.yml
 services:
 
   world1:
