@@ -77,17 +77,17 @@ mkdir -p ~/.steam/sdk64
 cp ~/steamcmd/linux64/steamclient.so ~/.steam/sdk64/
 ```
 
-# 5. Fix Steam Runtime
-```bash
-mkdir -p ~/.steam/sdk64
-cp ~/steamcmd/linux64/steamclient.so ~/.steam/sdk64/
-```
-
-#6. Create Multi-World Structure
+#5. Create Multi-World Structure
 ```bash
 mkdir -p ~/valheim-configs/world1
 mkdir -p ~/valheim-configs/world2
 mkdir -p ~/valheim-configs/world3
+```
+```bash
+valheim-configs/
+├── world1/
+├── world2/
+└── world3/
 ```
 
 #7. Create Worlds (Recommended Method)
