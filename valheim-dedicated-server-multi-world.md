@@ -146,6 +146,8 @@ Make it executable
 chmod +x ~/valheim-server/start_world1.sh
 ```
 
+---
+
 World 2
 ```bash
 nano ~/valheim-server/start_world2.sh
@@ -168,6 +170,8 @@ Make it executable
 ```bash
 chmod +x ~/valheim-server/start_world2.sh
 ```
+
+---
 
 World 3
 ```bash
@@ -247,6 +251,8 @@ sudo systemctl daemon-reload
 sudo systemctl enable --now valheim-world1
 ```
 
+---
+
 World 2 Service
 ```bash
 sudo nano /etc/systemd/system/valheim-world2.service
@@ -274,6 +280,8 @@ Enable:
 sudo systemctl daemon-reload
 sudo systemctl enable --now valheim-world2
 ```
+
+---
 
 World 3 Service
 ```bash
@@ -310,7 +318,7 @@ journalctl -u valheim-world2 -f
 journalctl -u valheim-world3 -f
 ```
 
-11. Add Admins
+# 11. Add Admins
 nano ~/.config/unity3d/IronGate/Valheim/adminlist.txt
 
 Example:
