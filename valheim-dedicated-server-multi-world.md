@@ -327,14 +327,18 @@ You can get it by:
 -Pressing F2 in-game (while on the server) to show player list and IDs
 -Or using a site like SteamID lookup (enter Steam profile URL)
 
+Open ``` adminlist.txt ``` and add the SteamID64:
+
 ```bash
 nano ~/.config/unity3d/IronGate/Valheim/adminlist.txt
 ```
 
 Example:
 
+```bash
 76561198012345678
 76561198087654321
+```
 
 Restart server after changes.
 
