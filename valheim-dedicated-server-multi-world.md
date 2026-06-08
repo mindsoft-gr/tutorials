@@ -201,6 +201,8 @@ Launch parameters for World Modifiers
 
 Edit your server startup script for example ```start_world1.sh``` and add world modifier flags.
 
+Option 1: Change difficulty
+
 Difficulty presets:
 ```bash
 -preset normal
@@ -214,7 +216,13 @@ Difficulty presets:
 
 ```-preset``` overrides most other settings, so use it first when resetting.
 
-Option 1: Change difficulty
+Just replace this line:
+
+```bash
+-preset normal
+```
+
+Example:
 ```bash
 ./valheim_server.x86_64 \
 -name "World1" \
@@ -227,11 +235,7 @@ Option 1: Change difficulty
 -crossplay
 ```
 This Changes difficulty for World1
-Just replace this line:
 
-```bash
--preset normal
-```
 
 Option 2: Fully custom world modifiers
 
