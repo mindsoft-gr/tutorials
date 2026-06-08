@@ -336,13 +336,15 @@ nano ~/.config/unity3d/IronGate/Valheim/adminlist.txt
 Example:
 
 ```bash
-76561198012345678
-76561198087654321
+76543211234567890
+76543212345676543
 ```
 
-Restart server after changes.
+Restart servers after changes.
 
-12. Docker Setup (Recommended)
+
+# 12. Docker Setup (Recommended)
+
 Install Docker
 curl -fsSL https://get.docker.com | sh
 sudo usermod -aG docker $USER
