@@ -100,3 +100,15 @@ valheim-configs/
 # 8. Firewall Setup
 
 # 9. Run Servers (Native)
+
+# 10. systemd Services
+
+# 11. Admin Setup
+
+# 12. Docker Setup
+
+# 13. docker-compose,ynl
+
+# 14. Start Docker
+
+#15. Production Notes
