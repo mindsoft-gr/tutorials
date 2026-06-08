@@ -28,7 +28,7 @@ A complete guide to running **multiple Valheim worlds on one Linux server**, usi
 
 ---
 
-# 0. Overview
+# . Overview
 
 With this buide you will be able to:
 
