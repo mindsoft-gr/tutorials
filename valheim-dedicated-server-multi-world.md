@@ -388,7 +388,7 @@ services:
     environment:
       SERVER_NAME: World4
       WORLD_NAME: World4
-      SERVER_PASS: StrongPassword4
+      SERVER_PASS: 123456
 
     volumes:
       - ./world4:/config
@@ -407,7 +407,7 @@ services:
     environment:
       SERVER_NAME: World5
       WORLD_NAME: World5
-      SERVER_PASS: StrongPassword5
+      SERVER_PASS: 123456
 
     volumes:
       - ./world5:/config
@@ -426,19 +426,29 @@ services:
     environment:
       SERVER_NAME: World6
       WORLD_NAME: World6
-      SERVER_PASS: StrongPassword6
+      SERVER_PASS: 123456
 
     volumes:
       - ./world6:/config
 ```
 
-14. Start Docker Servers
+# 14. Start Docker Servers
+
+Start:
+```bash
 docker compose up -d
+```
+Check:
+```bash
+docker ps
+```
 
 Logs:
-
+```bash
 docker logs -f valheim-world1
+```
 
 Stop:
-
+```bash
 docker compose down
+```
