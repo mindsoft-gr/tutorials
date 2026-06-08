@@ -346,15 +346,21 @@ Restart servers after changes.
 # 12. Docker Setup (Recommended)
 
 Install Docker
+
+```bash
 curl -fsSL https://get.docker.com | sh
 sudo usermod -aG docker $USER
+```
 
 Log out & back in.
 
-Directory
+# Directory
+```bash
 mkdir -p ~/valheim-docker/world1
 mkdir -p ~/valheim-docker/world2
 mkdir -p ~/valheim-docker/world3
+```
+
 13. docker-compose.yml
 services:
 
