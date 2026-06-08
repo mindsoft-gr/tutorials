@@ -99,7 +99,7 @@ valheim-configs/
 
 Create worlds in-game:
 ```bash
-World	  Seed
+World  Seed
 World1	42069lolxd
 World2	vikings123
 World3	hardcore999
