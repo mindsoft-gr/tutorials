@@ -32,8 +32,6 @@ With this buide you will be able to:
 - [12. Docker Setup](#12-docker-setup-recommended)
 - [13. docker-compose](#13-docker-composeyml)
 - [14. Start Docker](#14-start-docker-servers)
-- [15. Production Notes](#15-recommended-production-setup)
-
 ---
 
 # 1. Install Dependencies
