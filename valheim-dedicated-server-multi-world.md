@@ -319,7 +319,17 @@ journalctl -u valheim-world3 -f
 ```
 
 # 11. Add Admins
+
+You need the SteamID64 (numeric ID) of the player you want to make admin.
+
+You can get it by:
+
+-Pressing F2 in-game (while on the server) to show player list and IDs
+-Or using a site like SteamID lookup (enter Steam profile URL)
+
+```bash
 nano ~/.config/unity3d/IronGate/Valheim/adminlist.txt
+```
 
 Example:
 
