@@ -95,6 +95,35 @@ valheim-configs/
 
 # 6. Create Worlds
 
+(Recommended Method)
+
+Create worlds in-game:
+```bash
+World	  Seed
+World1	42069lolxd
+World2	vikings123
+World3	hardcore999
+```
+
+Copy:
+
+```bash
+WorldName.db
+WorldName.fwl
+```
+
+Place into:
+
+```bash
+~/.config/unity3d/IronGate/Valheim/worlds_local/
+```
+
+Then move into:
+
+```bash
+~/valheim-configs/worldX/worlds_local/
+```
+
 # 7. Native Startup Scripts
 
 # 8. Firewall Setup
