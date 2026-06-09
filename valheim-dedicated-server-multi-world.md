@@ -251,11 +251,17 @@ You can override specific systems using ```-modifier:```:
 ```
 
 Common values:
+
 -Combat: ```veryeasy / easy / hard / veryhard```
+
 -Raids: ```none / less / more / muchmore```
+
 -Resources: ```less / more / muchmore```
+
 -Portals: ```casual / hard / veryhard```
+
 -Death penalty:```casual / easy / hard / hardcore```
+
 
 
 ```bash
