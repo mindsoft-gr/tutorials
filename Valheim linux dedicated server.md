@@ -23,7 +23,7 @@ sudo apt update && sudo apt install -y btop mc openssh-server rsync vlc tree
 - [7. Create Startup Script](#7-native-startup-script)
 - [8. World Modifiers](#8-world-modifiers)
 - [9. Fine-tuned Modifiers (advanced)](#9-fine-tuned-modifiers)
-- [10. systemd Services](#10-systemd-services-auto-start)
+- [10. Run Server](#10-run-server)
 - [11. Admin Setup](#11-add-admins)
 - [12. Docker Setup](#12-docker-setup-recommended)
 - [13. docker-compose](#13-docker-composeyml)
@@ -230,15 +230,7 @@ Common values:
 -crossplay
 ```
 
-#  Open Firewall Ports
-
-```bash
-sudo ufw allow 2456:2458/udp
-sudo ufw allow 2459:2461/udp
-sudo ufw allow 2462:2464/udp
-```
-
-# 9. Run Servers (Native)
+# 10. Run Server
 
 ```bash
 ./start_world1.sh
@@ -254,7 +246,7 @@ server-IP:2459
 server-IP:2462
 ```
 
-# 10. systemd Services (Auto Start)
+# 11. systemd Services (Auto Start)
 
 World 1 Service
 ```bash
