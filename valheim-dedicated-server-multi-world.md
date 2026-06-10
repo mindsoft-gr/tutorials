@@ -73,13 +73,13 @@ cp ~/steamcmd/linux64/steamclient.so ~/.steam/sdk64/
 # 5. Multi-World Directory Structure
 
 ```bash
-mkdir -p ~/valheim-configs/world1
-mkdir -p ~/valheim-configs/world2
-mkdir -p ~/valheim-configs/world3
+mkdir -p ~/valheim-server/world1
+mkdir -p ~/valheim-server/world2
+mkdir -p ~/valheim-server/world3
 ```
 
 ```bash
-valheim-configs/
+valheim-server/
 ├── world1/
 ├── world2/
 └── world3/
@@ -117,7 +117,7 @@ mkdir worlds_local
 and place the corresponding world files in that directory.
 
 ```bash
-~/valheim-configs/worldX/worlds_local/
+~/valheim-server/worldX/worlds_local/
 ```
 
 
@@ -141,7 +141,7 @@ export templatedir=$PWD
 -world "World1" \
 -password "123456" \
 -public 1 \
--savedir "$HOME/valheim-configs/world1" \
+-savedir "$HOME/valheim-server/world1" \
 -crossplay
 ```
 
@@ -167,8 +167,8 @@ Paste this:
 -world "World1" \
 -password "123456" \
 -public 1 \
--savedir "$HOME/valheim-configs/world1" \
--savedir "$HOME/valheim-configs/world2" \
+-savedir "$HOME/valheim-server/world1" \
+-savedir "$HOME/valheim-server/world2" \
 -crossplay
 ```
 Make it executable
@@ -193,7 +193,7 @@ Paste this:
 -world "World3" \
 -password "123456" \
 -public 1 \
--savedir "$HOME/valheim-configs/world3" \
+-savedir "$HOME/valheim-server/world3" \
 -crossplay
 ```
 Make it executable
@@ -234,7 +234,7 @@ Example:
 -world "World1" \
 -password "123456" \
 -public 1 \
--savedir "$HOME/valheim-configs/world1" \
+-savedir "$HOME/valheim-server/world1" \
 -preset hammer \
 -crossplay
 ```
@@ -274,7 +274,7 @@ Common values:
 -world "World1" \
 -password "123456" \
 -public 1 \
--savedir "$HOME/valheim-configs/world1" \
+-savedir "$HOME/valheim-server/world1" \
 -modifier combat hard \
 -modifier raids less \
 -modifier resources more \
@@ -586,7 +586,7 @@ WORLD_NAME=World4
 ```
 Your mounted volume:
 ```bash
-$HOME/valheim-configs/world1:/config
+$HOME/valheim-server/world1:/config
 ```
 Inside container, world files must be:
 ```bash
