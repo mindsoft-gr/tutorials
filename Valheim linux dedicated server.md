@@ -51,9 +51,14 @@ tar -xvzf steamcmd_linux.tar.gz
 
 # 3. Install Valheim Dedicated Server
 
+```bash
+cd ~/
+mkdir valheim-server
+```
 Run SteamCMD:
 
 ```bash
+cd ~/steamcmd
 ./steamcmd.sh
 ```
 
