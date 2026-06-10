@@ -160,10 +160,14 @@ nano start_server.sh
 ```
 
 delete everything and paste this:
+
 ```bash
 #!/bin/bash
 
 export templatedir=$PWD
+export SteamAppId=892970
+
+echo "Starting Valheim server PRESS CTRL-C to exit"
 
 ./valheim_server.x86_64 \
 -name "TestWorld" \
