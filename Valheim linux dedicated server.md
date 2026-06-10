@@ -24,7 +24,7 @@ sudo apt update && sudo apt install -y btop mc openssh-server rsync vlc tree
 - [8. World Modifiers](#8-world-modifiers)
 - [9. Fine-tuned Modifiers (advanced)](#9-fine-tuned-modifiers)
 - [10. Run Server](#10-run-server)
-- [11. Admin Setup](#11-add-admins)
+- [11. systemd Service (Auto Start)](#11-auto-start)
 - [12. Docker Setup](#12-docker-setup-recommended)
 - [13. docker-compose](#13-docker-composeyml)
 - [14. Start Docker](#14-start-docker-servers)
@@ -286,7 +286,7 @@ Logs:
 journalctl -u valheim-world1 -f
 ```
 
-# 11. systemd Services (Auto Start)
+# 11. systemd Service (Auto Start)
 
 Create a service file
 
