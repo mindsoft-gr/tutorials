@@ -143,59 +143,9 @@ export templatedir=$PWD
 ```
 
 Make it executable
+
 ```bash
-chmod +x ~/valheim-server/start_world1.sh
-```
-
----
-
-World 2
-```bash
-nano ~/valheim-server/start_world2.sh
-```
-
-Paste this:
-```bash
-#!/bin/bash
-
-./valheim_server.x86_64 \
--name "World1" \
--port 2456 \
--world "World1" \
--password "123456" \
--public 1 \
--savedir "$HOME/valheim-server/world1" \
--savedir "$HOME/valheim-server/world2" \
--crossplay
-```
-Make it executable
-```bash
-chmod +x ~/valheim-server/start_world2.sh
-```
-
----
-
-World 3
-```bash
-nano ~/valheim-server/start_world3.sh
-```
-
-Paste this:
-```bash
-#!/bin/bash
-
-./valheim_server.x86_64 \
--name "World3" \
--port 2462 \
--world "World3" \
--password "123456" \
--public 1 \
--savedir "$HOME/valheim-server/world3" \
--crossplay
-```
-Make it executable
-```bash
-chmod +x ~/valheim-server/start_world3.sh
+chmod +x start_server.sh
 ```
 
 # Launch parameters for World Modifiers
@@ -226,12 +176,12 @@ Just replace this line:
 Example:
 ```bash
 ./valheim_server.x86_64 \
--name "World1" \
+-name "TestWorld" \
 -port 2456 \
--world "World1" \
+-world "TestWorld" \
 -password "123456" \
 -public 1 \
--savedir "$HOME/valheim-server/world1" \
+-savedir "$HOME/.config/unity3d/IronGate/Valheim" \
 -preset hammer \
 -crossplay
 ```
