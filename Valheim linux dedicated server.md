@@ -25,9 +25,8 @@ sudo apt update && sudo apt install -y btop mc openssh-server rsync vlc tree
 - [9. Fine-tuned Modifiers (advanced)](#9-fine-tuned-modifiers)
 - [10. Run Server](#10-run-server)
 - [11. systemd Service (Auto Start)](#11-auto-start)
-- [12. Docker Setup](#12-docker-setup-recommended)
-- [13. docker-compose](#13-docker-composeyml)
-- [14. Start Docker](#14-start-docker-servers)
+- [12. Add admins](#12-add-admins)
+
 ---
 
 # 1. Install Dependencies
