@@ -35,32 +35,37 @@ sudo apt update && sudo apt install -y btop mc openssh-server rsync vlc tree
 Open a terminal and install the basics:
 
 ```bash
-sudo apt update && sudo apt install curl wget tar lib32gcc-s1 -y
+sudo apt update
+sudo apt install curl wget tar lib32gcc-s1
 ```
+
 # 2. Install SteamCMD
 
-```bash
-mkdir -p ~/steamcmd
-cd ~/steamcmd
+This is what you’ll use to download the server:
 
+```bash
+mkdir ~/steamcmd && cd ~/steamcmd
 wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz
 tar -xvzf steamcmd_linux.tar.gz
 ```
+
 # 3. Install Valheim Dedicated Server
 
+Run SteamCMD:
+
 ```bash
-mkdir ~/valheim-server/valheim
-cd ~/steamcmd
 ./steamcmd.sh
 ```
 
 Inside SteamCMD:
 ```bash
-force_install_dir /home/$USER/valheim-server/valheim
+force_install_dir /home/$USER/valheim-server/
 login anonymous
 app_update 896660 validate
 quit
 ```
+
+
 # 4. Fix Steam Runtime
 
 ```bash
