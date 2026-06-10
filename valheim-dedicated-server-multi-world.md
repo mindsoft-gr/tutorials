@@ -340,6 +340,7 @@ Enable:
 ```bash
 sudo systemctl daemon-reload
 sudo systemctl enable --now valheim-world1
+sudo reboot
 ```
 
 ---
