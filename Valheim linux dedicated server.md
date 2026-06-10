@@ -171,7 +171,7 @@ export templatedir=$PWD
 -world "TestWorld" \
 -password "123456" \
 -public 1 \
--savedir "$HOME/.config/unity3d/IronGate/Valheim" \
+-savedir "/home/user/.config/unity3d/IronGate/Valheim" \
 -crossplay \
 ```
 
