@@ -103,44 +103,16 @@ Then copy the files ```TestWorld.db``` and ```TestWorld.fwl``` from your game cl
 
 # 6. Open firewall ports
 
-Valheim uses:
+Default ports (important)
 
-UDP 2456–2458
+A single Valheim server uses:
+
+```UDP 2456–2458```
 
 Allow them:
 
+```bash
 sudo ufw allow 2456:2458/udp
-
-Create worlds in-game:
-
-```bash
-World  Seed
-World1	Valheim
-World2	tyeDWcN7cp
-World3	ym6RwFNELS
-World4  UDiMgesqtu
-World5  p7iWJbr2V4
-World6  cAD0nzXZpv
-```
-
-Copy:
-
-```bash
-WorldName.db
-WorldName.fwl
-```
-
-Within each world directory, create a ```worlds_local``` subdirectory using ```mkdir```, 
-
-```bash
-mkdir worlds_local
-```
-
-
-and place the corresponding world files in that directory.
-
-```bash
-~/valheim-server/worldX/worlds_local/
 ```
 
 
