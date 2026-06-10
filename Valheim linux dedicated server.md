@@ -113,10 +113,24 @@ on your server create a temporaty folder to transfer the files ```TestWorld.db``
 mkdir ~/testworld
 cd testworld
 ```
-affter both lifes are in your ```testworld`` forlder
+affter both lifes are in your ```testworld``` forlder run
+
+
 
 ```bash
-~/.config/unity3d/IronGate/Valheim/worlds_local/
+cd ~/testworld/
+cp TestWorld.db TestWorld.fwl ~/.config/unity3d/IronGate/Valheim/worlds_local/
+ll ~/.config/unity3d/IronGate/Valheim/worlds_local/
+```
+you should see the files in ```~/.config/unity3d/IronGate/Valheim/worlds_local/```
+
+```bash
+./
+../
+Dedicated.fwl
+DevWorld.fwl
+TestWorld.db*
+TestWorld.fwl*
 ```
 
 
