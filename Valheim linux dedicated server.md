@@ -18,7 +18,7 @@ sudo apt update && sudo apt install -y btop mc openssh-server rsync vlc tree
 - [2. Install SteamCMD](#2-install-steamcmd)
 - [3. Install Valheim Dedicated Server](#3-install-valheim-dedicated-server)
 - [4. Fix Steam Runtime](#4-fix-steam-runtime)
-- [5. Multi-World Directory Structure](#5-multi-world-directory-structure)
+- [5. Generate your world](#5-generate-your-world)
 - [6. Create Worlds](#6-create-worlds-recommended-method)
 - [7. Native Startup Scripts](#7-native-startup-scripts)
 - [8. Firewall Setup](#8-open-firewall-ports)
@@ -73,7 +73,8 @@ mkdir -p ~/.steam/sdk64
 cp ~/steamcmd/linux64/steamclient.so ~/.steam/sdk64/
 ```
 
-# 5. Multi-World Directory Structure
+
+# 5. Generate your world
 
 ```bash
 mkdir -p ~/valheim-server/world1
