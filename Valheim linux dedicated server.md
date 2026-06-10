@@ -24,7 +24,7 @@ sudo apt update && sudo apt install -y btop mc openssh-server rsync vlc tree
 - [8. World Modifiers](#8-world-modifiers)
 - [9. Fine-tuned Modifiers (advanced)](#9-fine-tuned-modifiers)
 - [10. Run Server](#10-run-server)
-- [11. systemd Service (Auto Start)](#11-auto-start)
+- [11. systemd Service (Auto Start)](#11-systemd-service-auto-start)
 - [12. Add admins](#12-add-admins)
 
 ---
