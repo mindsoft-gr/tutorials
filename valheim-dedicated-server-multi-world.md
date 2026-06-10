@@ -54,9 +54,7 @@ tar -xvzf steamcmd_linux.tar.gz
 
 ```bash
 mkdir ~/valheim-server/valheim
-
-
-```bash
+cd ~/steamcmd
 ./steamcmd.sh
 ```
 
