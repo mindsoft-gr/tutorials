@@ -245,105 +245,16 @@ server-IP:2459
 server-IP:2462
 ```
 
-# 11. systemd Services (Auto Start)
-
-World 1 Service
-```bash
-sudo nano /etc/systemd/system/valheim-world1.service
-```
-
-Paste this:
-```bash
-[Unit]
-Description=Valheim Server: WorldX
-After=network.target
-
-[Service]
-Type=simple
-User=user
-WorkingDirectory=/home/user/valheim-server
-ExecStart=/home/user/valheim-server/start_worldx.sh
-Restart=always
-RestartSec=10
-
-[Install]
-WantedBy=multi-user.target
-```
-replace ```user``` with your ```username``` but do not change the ```WantedBy=multi-user.target``` line.
-
-
-Enable:
-```bash
-sudo systemctl daemon-reload
-sudo systemctl enable --now valheim-world1
-```
-
----
-
-World 2 Service
-```bash
-sudo nano /etc/systemd/system/valheim-world2.service
-```
-Paste this:
-```bash
-[Unit]
-Description=Valheim World2
-After=network.target
-
-[Service]
-Type=simple
-User=user
-WorkingDirectory=/home/user/valheim-server
-ExecStart=/home/user/valheim-server/start_world2.sh
-Restart=always
-RestartSec=10
-
-[Install]
-WantedBy=multi-user.target
-```
-
-Enable:
-```bash
-sudo systemctl daemon-reload
-sudo systemctl enable --now valheim-world2
-```
-
----
-
-World 3 Service
-```bash
-sudo nano /etc/systemd/system/valheim-world3.service
-```
-Paste this:
-```bash
-[Unit]
-Description=Valheim World3
-After=network.target
-
-[Service]
-Type=simple
-User=user
-WorkingDirectory=/home/user/valheim-server
-ExecStart=/home/user/valheim-server/start_world3.sh
-Restart=always
-RestartSec=10
-
-[Install]
-WantedBy=multi-user.target
-```
-
-Enable:
-```bash
-sudo systemctl daemon-reload
-sudo systemctl enable --now valheim-world3
-```
-
 Logs:
+
 ```bash
 journalctl -u valheim-world1 -f
-journalctl -u valheim-world2 -f
-journalctl -u valheim-world3 -f
 ```
+
+# 11. systemd Services (Auto Start)
+
+
+
 
 # 11. Add Admins
 
