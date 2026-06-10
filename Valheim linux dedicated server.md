@@ -362,3 +362,5 @@ Example:
 
 Restart servers after changes.
 
+# Your server is ready, have fun.
+
