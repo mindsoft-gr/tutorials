@@ -20,7 +20,7 @@ sudo apt update && sudo apt install -y btop mc openssh-server rsync vlc tree
 - [4. Fix Steam Runtime](#4-fix-steam-runtime)
 - [5. Generate your world](#5-generate-your-world)
 - [6. Open firewall ports](#6-open-firewall-ports)
-- [7. Create Startup Script](#7-native-startup-script)
+- [7. Create Startup Script](#7-create-startup-script)
 - [8. World Modifiers](#8-world-modifiers)
 - [9. Fine-tuned Modifiers](#9-fine-tuned-modifiers)
 - [10. Run Server](#10-run-server)
