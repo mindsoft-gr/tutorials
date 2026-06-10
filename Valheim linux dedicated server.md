@@ -321,8 +321,21 @@ sudo systemctl enable --now valheim.service
 sudo reboot
 ```
 
+After reboot check the service is running
 
-# 11. Add Admins
+```bash
+sudo systemctl status valheim
+```
+Useful commands
+
+```bash
+sudo systemctl status valheim   # check if running
+sudo systemctl stop valheim     # stop server
+sudo systemctl restart valheim  # restart
+journalctl -u valheim -f        # live logs (VERY useful)
+```
+
+# Add Admins
 
 You need the SteamID64 (numeric ID) of the player you want to make admin.
 
