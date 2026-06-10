@@ -188,7 +188,7 @@ Example:
 
 This Changes difficulty for World1
 
-# 9. Fine-tuned modifiers (advanced)
+# 9. Fine-tuned Modifiers (advanced)
 
 You can override specific systems using ```-modifier:```:
 
