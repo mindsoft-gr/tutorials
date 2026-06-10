@@ -317,7 +317,7 @@ replace ```user``` with your ```username``` but do not change the ```WantedBy=mu
 Enable:
 ```bash
 sudo systemctl daemon-reload
-sudo systemctl enable --now valheim-world1
+sudo systemctl enable --now valheim.service
 ```
 
 
