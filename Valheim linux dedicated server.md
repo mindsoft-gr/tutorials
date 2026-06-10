@@ -1,19 +1,14 @@
 
-# Valheim Dedicated Server (Multi-World: Native + Docker)
+# Valheim Dedicated Server 
 
-A complete guide to running **multiple Valheim worlds on one Linux server**, using either:
+A complete guide to setup a dedicated Valheim server on LinuxMint/Ubuntu
 
-- Native Linux (systemd-based setup)
-- Docker (recommended for scalability and isolation)
+Usefull tools
 
-# Overview
+```bash
+sudo apt update && sudo apt install -y btop mc openssh-server rsync vlc tree
+```
 
-With this buide you will be able to:
-
-- Host multiple independent Valheim worlds
-- Assign each world its own ports
-- Run worlds via systemd or Docker or both
-- Scale easily from 1 → 10+ worlds
 
 ---
 
