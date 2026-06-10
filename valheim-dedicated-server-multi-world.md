@@ -331,6 +331,8 @@ RestartSec=10
 [Install]
 WantedBy=multi-user.target
 ```
+replace ```user``` with your ```username``` but do not change the ```WantedBy=multi-user.target``` line.
+
 
 Enable:
 ```bash
