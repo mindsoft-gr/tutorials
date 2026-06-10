@@ -221,7 +221,7 @@ Example:
 -crossplay
 ```
 
-This Changes difficulty for World1
+This Changes difficulty for World
 
 # 9. Fine-tuned Modifiers (advanced)
 
@@ -288,7 +288,37 @@ journalctl -u valheim-world1 -f
 
 # 11. systemd Services (Auto Start)
 
+Create a service file
 
+```bash
+sudo nano /etc/systemd/system/valheim.service
+```
+
+Paste this:
+```bash
+[Unit]
+Description=Valheim Server
+After=network.target
+
+[Service]
+Type=simple
+User=user
+WorkingDirectory=/home/user/valheim-server
+ExecStart=/home/user/valheim-server/start_server.sh
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+```
+replace ```user``` with your ```username``` but do not change the ```WantedBy=multi-user.target``` line.
+
+
+Enable:
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable --now valheim-world1
+```
 
 
 # 11. Add Admins
