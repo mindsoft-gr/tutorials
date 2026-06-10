@@ -159,7 +159,7 @@ cd ~/valheim-server
 nano start_server.sh
 ```
 
-paste this at the end:
+delete everything and paste this:
 ```bash
 #!/bin/bash
 
