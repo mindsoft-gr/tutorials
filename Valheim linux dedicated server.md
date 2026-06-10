@@ -172,7 +172,7 @@ export templatedir=$PWD
 -password "123456" \
 -public 1 \
 -savedir "/home/user/.config/unity3d/IronGate/Valheim" \
--crossplay \
+-crossplay
 ```
 Replace ```user``` on line ```-savedir "/home/user/.config/unity3d/IronGate/Valheim" \``` with your ```username```
 
