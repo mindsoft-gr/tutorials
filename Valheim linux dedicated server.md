@@ -233,9 +233,8 @@ Common values:
 # 10. Run Server
 
 ```bash
-./start_world1.sh
-./start_world2.sh
-./start_world3.sh
+cd ~/valheim-server
+./start_server.sh
 ```
 
 Connect:
