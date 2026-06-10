@@ -117,11 +117,13 @@ sudo ufw allow 2456:2458/udp
 
 
 
-# 7. Native Startup Scripts
+# 7. Create Startup Script
 
-World 1
+Go to your server folder:
+
 ```bash
-nano ~/valheim-server/start_world1.sh
+cd ~/valheim-server
+nano start_server.sh
 ```
 
 Paste this:
@@ -131,13 +133,13 @@ Paste this:
 export templatedir=$PWD
 
 ./valheim_server.x86_64 \
--name "World1" \
+-name "TestWorld" \
 -port 2456 \
--world "World1" \
+-world "TestWorld" \
 -password "123456" \
 -public 1 \
--savedir "$HOME/valheim-server/world1" \
--crossplay
+-savedir "$HOME/.config/unity3d/IronGate/Valheim" \
+-crossplay \
 ```
 
 Make it executable
