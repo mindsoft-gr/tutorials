@@ -107,17 +107,13 @@ WorldName.db
 WorldName.fwl
 ```
 
-Place into:
-
-```bash
-~/.config/unity3d/IronGate/Valheim/worlds_local/
-```
-
-Then move into:
+Within each world directory, create a ```worlds_local``` subdirectory using ```mkdir```, and place the corresponding world files in that directory.
 
 ```bash
 ~/valheim-configs/worldX/worlds_local/
 ```
+
+
 
 # 7. Native Startup Scripts
 
