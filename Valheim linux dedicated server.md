@@ -22,7 +22,7 @@ sudo apt update && sudo apt install -y btop mc openssh-server rsync vlc tree
 - [6. Open firewall ports](#6-open-firewall-ports)
 - [7. Create Startup Script](#7-native-startup-script)
 - [8. World Modifiers](#8-world-modifiers)
-- [9. Fine-tuned Modifiers (advanced)](#9-fine-tuned-modifiers)
+- [9. Fine-tuned Modifiers](#9-fine-tuned-modifiers)
 - [10. Run Server](#10-run-server)
 - [11. systemd Service (Auto Start)](#11-systemd-service-auto-start)
 - [12. Add admins](#12-add-admins)
@@ -226,7 +226,7 @@ Example:
 
 This Changes difficulty for World
 
-# 9. Fine-tuned Modifiers (advanced)
+# 9. Fine-tuned Modifiers
 
 You can override specific systems using ```-modifier:```:
 
