@@ -73,6 +73,12 @@ app_update 896660 validate
 quit
 ```
 
+Run the server once
+
+```bash
+cd ~/valheim-server/
+./valheim_server.x86_64
+```
 # 4. Fix Steam Runtime
 
 ```bash
@@ -89,7 +95,6 @@ Generate your world locally in the game client using:
 Name: TestWorld
 Seed: 42069lolxd
 ```
-
 or any other combination of Name/Seed you want to use.
 
 ```bash
@@ -102,13 +107,13 @@ World5  p7iWJbr2V4
 World6  cAD0nzXZpv
 ```
 
-First we need to create the folder that the Valheim world will be placed.
+on your server create a temporaty folder to transfer the files ```TestWorld.db``` and ```TestWorld.fwl``` from your game client
 
 ```bash
-mkdir -p ~/.config/unity3d/IronGate/Valheim/worlds_local/
+mkdir ~/testworld
+cd testworld
 ```
-
-Then copy the files ```TestWorld.db``` and ```TestWorld.fwl``` from your game client to:
+affter both lifes are in your ```testworld`` forlder
 
 ```bash
 ~/.config/unity3d/IronGate/Valheim/worlds_local/
