@@ -76,24 +76,43 @@ cp ~/steamcmd/linux64/steamclient.so ~/.steam/sdk64/
 
 # 5. Generate your world
 
-```bash
-mkdir -p ~/valheim-server/world1
-mkdir -p ~/valheim-server/world2
-mkdir -p ~/valheim-server/world3
-```
+Generate your world locally in the game client using:
 
 ```bash
-valheim-server/
-├── world1/
-├── world2/
-└── world3/
+Name: TestWorld
+Seed: 42069lolxd
 ```
 
-# 6. Create Worlds
+or any other combination of Name/Seed you want to use.
 
-(Recommended Method)
+```bash
+World  Seed
+World1	Valheim
+World2	tyeDWcN7cp
+World3	ym6RwFNELS
+World4  UDiMgesqtu
+World5  p7iWJbr2V4
+World6  cAD0nzXZpv
+```
+
+Then copy the files ```TestWorld.db``` and ```TestWorld.fwl``` from your game client to:
+
+```bash
+~/.config/unity3d/IronGate/Valheim/worlds_local/
+```
+
+# 6. Open firewall ports
+
+Valheim uses:
+
+UDP 2456–2458
+
+Allow them:
+
+sudo ufw allow 2456:2458/udp
 
 Create worlds in-game:
+
 ```bash
 World  Seed
 World1	Valheim
