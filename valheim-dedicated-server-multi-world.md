@@ -319,14 +319,14 @@ sudo nano /etc/systemd/system/valheim-world1.service
 Paste this:
 ```bash
 [Unit]
-Description=Valheim World1
+Description=Valheim Server: WorldX
 After=network.target
 
 [Service]
 Type=simple
 User=user
 WorkingDirectory=/home/user/valheim-server
-ExecStart=/home/user/valheim-server/start_world1.sh
+ExecStart=/home/user/valheim-server/start_worldx.sh
 Restart=always
 RestartSec=10
 
