@@ -107,7 +107,14 @@ WorldName.db
 WorldName.fwl
 ```
 
-Within each world directory, create a ```worlds_local``` subdirectory using ```mkdir```, and place the corresponding world files in that directory.
+Within each world directory, create a ```worlds_local``` subdirectory using ```mkdir```, 
+
+```bash
+mkdir worlds_local
+```
+
+
+and place the corresponding world files in that directory.
 
 ```bash
 ~/valheim-configs/worldX/worlds_local/
