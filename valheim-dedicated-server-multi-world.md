@@ -53,12 +53,16 @@ tar -xvzf steamcmd_linux.tar.gz
 # 3. Install Valheim Dedicated Server
 
 ```bash
+mkdir ~/valheim-server/valheim
+
+
+```bash
 ./steamcmd.sh
 ```
 
 Inside SteamCMD:
 ```bash
-force_install_dir /home/$USER/valheim-server
+force_install_dir /home/$USER/valheim-server/valheim
 login anonymous
 app_update 896660 validate
 quit
