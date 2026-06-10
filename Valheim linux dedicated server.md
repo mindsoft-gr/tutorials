@@ -102,11 +102,18 @@ World5  p7iWJbr2V4
 World6  cAD0nzXZpv
 ```
 
+First we need to create the folder that the Valheim world will be placed.
+
+```bash
+mkdir -p ~/.config/unity3d/IronGate/Valheim/worlds_local/
+```
+
 Then copy the files ```TestWorld.db``` and ```TestWorld.fwl``` from your game client to:
 
 ```bash
 ~/.config/unity3d/IronGate/Valheim/worlds_local/
 ```
+
 
 # 6. Open firewall ports
 
