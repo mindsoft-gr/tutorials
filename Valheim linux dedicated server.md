@@ -174,6 +174,8 @@ export templatedir=$PWD
 -savedir "/home/user/.config/unity3d/IronGate/Valheim" \
 -crossplay \
 ```
+Replace ```user``` on line ```-savedir "/home/user/.config/unity3d/IronGate/Valheim" \``` with your ```username```
+
 
 Make it executable
 
