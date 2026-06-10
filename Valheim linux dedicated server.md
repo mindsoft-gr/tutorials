@@ -64,12 +64,12 @@ cd ~/steamcmd
 
 Inside SteamCMD:
 ```bash
-force_install_dir /home/$USER/valheim-server/
+force_install_dir /home/user/valheim-server/
 login anonymous
 app_update 896660 validate
 quit
 ```
-
+!Note, replace ```user``` with your ```username```
 
 # 4. Fix Steam Runtime
 
